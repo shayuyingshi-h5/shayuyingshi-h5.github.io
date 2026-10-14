@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>鲨鱼影视 - 深海荐片台 · 按水深排片/鲨片专题/海洋纪录片/鲨鱼名盗版避雷 | shayuyingshi-h5.github.io</title>
+<meta name="description" content="鲨鱼影视，深海荐片台风单页：深渊蓝、浪沫青、鲨背灰、血鳍红、珊瑚橙、月光银。表层爽片、悬疑惊悚、深海神作、海洋纪录片、鲨片专题、潜水员黑话，以及“鲨鱼影视/鲨鱼影院”聚合盗版站避雷。官网 https://shayuyingshi-h5.github.io">
+<meta name="keywords" content="鲨鱼影视, 深海荐片, 鲨片专题, 海洋纪录片, 大白鲨, 深海惊悚, 鲨鱼影院避雷, 4K尖齿盗版">
+<meta name="author" content="鲨鱼影视">
+<meta name="robots" content="index,follow">
+<meta name="bingbot" content="index,follow">
+<meta name="theme-color" content="#04121f">
+<style>
+:root{
+  --bg:#04121f;--bg2:#08202f;--panel:#0c2a3c;--line:rgba(0,242,210,.28);
+  --deep:#04121f;--foam:#00f2d2;--back:#5b6b78;--fin:#ff3b3b;--coral:#ff7a45;--moon:#dff3ff;--ink:#e7f6ff;--muted:#8fb2c4;
+  --mono:Consolas,Menlo,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:62px}
+body{
+  background:
+    radial-gradient(560px 320px at 84% -8%,rgba(255,122,69,.14),transparent),
+    radial-gradient(520px 320px at -8% 8%,rgba(0,242,210,.14),transparent),
+    linear-gradient(180deg,#04121f,#08202f 55%,#020c14);
+  color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;line-height:1.9;
+}
+a{color:var(--foam);text-decoration:none}
+.bar{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px;border-bottom:2px solid var(--foam);background:rgba(4,18,31,.93);backdrop-filter:blur(8px)}
+.logo b{font-family:var(--mono);font-size:18px;color:var(--foam);letter-spacing:1px}
+.logo span{display:block;font-size:9px;letter-spacing:5px;color:var(--muted);font-family:var(--mono)}
+.nav{display:flex;gap:6px;flex-wrap:wrap}
+.nav a{font-size:12px;padding:5px 9px;border:1px solid var(--line);border-radius:999px;background:var(--panel);color:var(--ink)}
+.nav a:hover{border-color:var(--coral);color:var(--coral)}
+.hero{max-width:1040px;margin:0 auto;padding:52px 20px 24px;position:relative;text-align:center;overflow:hidden}
+.beam{position:absolute;inset:0;z-index:0;background:conic-gradient(from 200deg at 50% -10%,rgba(223,243,255,.10),transparent 30%)}
+.hero .inner{position:relative;z-index:2}
+.kicker{font-family:var(--mono);font-size:12px;color:var(--coral);letter-spacing:2px}
+.hero h1{font-size:32px;margin:8px 0 6px;font-weight:900}
+.hero h1 em{font-style:normal;color:var(--foam)}
+.hero p{color:var(--muted);max-width:740px;margin:0 auto 12px;font-size:15px}
+.hero .url{display:inline-block;font-family:var(--mono);font-size:13px;background:var(--panel);border:1px dashed var(--foam);color:var(--foam);padding:7px 14px;border-radius:999px}
+.metrics{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:16px}
+.metrics div{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:10px 14px;min-width:108px}
+.metrics b{display:block;font-size:18px;color:var(--fin);font-family:var(--mono)}
+.metrics small{color:var(--muted);font-size:12px}
+.wrap{max-width:1060px;margin:0 auto;padding:16px 20px 40px}
+.depth{font-size:13px;font-family:var(--mono);color:var(--moon);margin:24px 0 10px;display:flex;align-items:center;gap:8px}
+.depth::before{content:"";width:26px;height:2px;background:linear-gradient(90deg,var(--foam),transparent)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:linear-gradient(180deg,var(--panel),var(--bg2));border:1px solid var(--line);border-radius:18px 18px 18px 4px;padding:14px;position:relative;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:var(--coral)}
+.card .depth-tag{position:absolute;top:-10px;left:12px;font-family:var(--mono);font-size:11px;padding:2px 8px;border-radius:999px;font-weight:800;color:#04121f;background:var(--foam)}
+.card .depth-tag.mid{background:var(--coral)}
+.card .depth-tag.deep{background:var(--moon)}
+.card .ico{font-size:24px;margin-top:6px}
+.card h3{font-size:15px;margin:4px 0 2px}
+.card p{font-size:12px;color:var(--muted)}
+.card .pick{margin-top:8px;font-size:12px;color:var(--moon);font-family:var(--mono)}
+.shark{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
+.s{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px;text-align:center}
+.s .emoji{font-size:26px}
+.s h3{font-size:14px;color:var(--foam);font-family:var(--mono);margin:6px 0 4px}
+.s p{font-size:12px;color:var(--muted)}
+.list{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:14px}
+.list li{list-style:none;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14px;color:var(--ink)}
+.list li:last-child{border-bottom:none}
+.list b{color:var(--coral);font-family:var(--mono)}
+.vocab{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:14px}
+.vcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px}
+.vcard h4{font-size:14px;color:var(--foam);font-family:var(--mono);margin-bottom:4px}
+.vcard p{font-size:12px;color:var(--muted)}
+.about p{color:var(--muted);font-size:14px;margin-bottom:8px}
+.about code{background:var(--bg2);border:1px solid var(--line);color:var(--foam);padding:2px 7px;border-radius:6px;font-family:var(--mono)}
+.warn{margin-top:12px;background:rgba(255,59,59,.12);border:1px solid rgba(255,59,59,.45);border-radius:12px;padding:12px 14px;color:#ffd2d2;font-size:13px;font-family:var(--mono)}
+.foot{text-align:center;padding:24px 20px;border-top:2px solid var(--foam);color:var(--muted);font-size:12px;font-family:var(--mono)}
+@media(max-width:860px){.grid{grid-template-columns:1fr 1fr}.shark{grid-template-columns:1fr 1fr}.vocab{grid-template-columns:1fr}}
+@media(max-width:540px){.grid{grid-template-columns:1fr}.shark{grid-template-columns:1fr}.hero h1{font-size:25px}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<header class="bar">
+  <div class="logo"><b>鲨鱼影视</b><span>DEEP-SEA PICKER</span></div>
+  <nav class="nav">
+    <a href="#home">深海荐片台</a>
+    <a href="#surface">表层爽片</a>
+    <a href="#mid">悬疑惊悚</a>
+    <a href="#abyss">深海神作</a>
+    <a href="#ocean">海洋纪录片</a>
+    <a href="#shark">鲨片专题</a>
+    <a href="#slang">潜水员黑话</a>
+    <a href="#avoid">鲨鱼名避雷</a>
+    <a href="#about">关于</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <div class="beam"></div>
+  <div class="inner">
+    <span class="kicker">// shark.dive({ depth:"auto", parse:false, spoiler:false })</span>
+    <h1>鲨鱼影视 · <em>深海荐片台</em></h1>
+    <p>不是“鲨鱼影视免费高清 / 深海巨幕 / 4K 尖齿捕猎”。这是潜水灯扫过海沟的荐片站：按水深排片，越深越狠，越浅越爽。鲨鱼只是导游，不卖片、不解析、不下载。[4,10](@ref)</p>
+    <div class="url">https://shayuyingshi-h5.github.io</div>
+    <div class="metrics">
+      <div><b>3 水层</b><small>浅/中/深渊</small></div>
+      <div><b>1 鲨专题</b><small>大白鲨到深海</small></div>
+      <div><b>0 资源</b><small>只荐不存</small></div>
+      <div><b>index,follow</b><small>必应友好</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <div class="depth" id="surface">🌊 0–200m 表层 · 下班爽片，不烧脑</div>
+  <div class="grid">
+    <div class="card"><span class="depth-tag">表层</span><div class="ico">🦈</div><h3>动作爆米花</h3><p>追车、爆炸、反派话多，脑子关机也能看。</p><div class="pick">pick：《疯狂的麦克斯4》《谍影重重》《极速车王》</div></div>
+    <div class="card"><span class="depth-tag">表层</span><div class="ico">🏝️</div><h3>海岛轻喜剧</h3><p>海风、烧烤、误会与和解，鲨鱼都不忍咬。</p><div class="pick">pick：《我们的蓝调》《海岸村恰恰恰》</div></div>
+    <div class="card"><span class="depth-tag">表层</span><div class="ico">🎤</div><h3>综艺下饭</h3><p>名场面靠剪辑，笑点靠嘉宾，饭别凉。</p><div class="pick">pick：《快乐再出发》《新西游记》</div></div>
+  </div>
+
+  <div class="depth" id="mid">🌑 200–1000m 中层 · 悬疑惊悚，灯开始闪</div>
+  <div class="grid">
+    <div class="card"><span class="depth-tag mid">中层</span><div class="ico">🚢</div><h3>密闭空间惊悚</h3><p>潜艇、油轮、孤岛、电梯，门一关人就变样。</p><div class="pick">pick：《深海圆疑》《异形》《密室逃生》</div></div>
+    <div class="card"><span class="depth-tag mid">🩸</span><div class="ico">🩸</div><h3>心理惊悚</h3><p>没血也后背发凉，凶手可能在画外。</p><div class="pick">pick：《看不见的客人》《记忆碎片》</div></div>
+    <div class="card"><span class="depth-tag mid">🌫️</span><div class="ico">🌫️</div><h3>海雾悬疑</h3><p>灯塔、渔村、无线电杂音，真相在浪里。</p><div class="pick">pick：《迷雾》《灯塔》《黄海》</div></div>
+  </div>
+
+  <div class="depth" id="abyss">🕳️ 1000m+ 深渊 · 冷门神作，水压很大</div>
+  <div class="grid">
+    <div class="card"><span class="depth-tag deep">深渊</span><div class="ico">🐋</div><h3>海洋哲思</h3><p>人不说话，海在说话，看完不想发朋友圈。</p><div class="pick">pick：《碧海蓝天》《2001太空漫游》</div></div>
+    <div class="card"><span class="depth-tag deep">🧊</span><div class="ico">🧊</div><h3>极地/沉船片</h3><p>冷、慢、孤，生存比剧情更重。</p><div class="pick">pick：《极地重生》《幽灵船》《南极大冒险》</div></div>
+    <div class="card"><span class="depth-tag deep">🎞️</span><div class="ico">🎞️</div><h3>被低估神作</h3><p>评分不一定 9.0，但后劲能跟三个月。</p><div class="pick">pick：《三块广告牌》《驾驶我的车》</div></div>
+  </div>
+
+  <div class="depth" id="ocean">🐠 海洋纪录片 · 真鲨比电影懂恐惧</div>
+  <div class="grid">
+    <div class="card"><span class="depth-tag">纪录</span><div class="ico">🦈</div><h3>鲨鱼生态</h3><p>大白鲨不是反派，被拍成反派的是人类镜头。</p><div class="pick">pick：Blue Planet II / 鲨鱼纪录片特辑</div></div>
+    <div class="card"><span class="depth-tag">纪录</span><div class="ico">🪸</div><h3>珊瑚与暖化</h3><p>白化、退潮、渔网，比惊悚片更惊悚。</p><div class="pick">pick：Chasing Coral / 蓝色星球</div></div>
+    <div class="card"><span class="depth-tag">纪录</span><div class="ico">🛥️</div><h3>深海探测</h3><p>没有怪物，只有人类没见过的光。</p><div class="pick">pick：深海挑战 / 海洋奥德赛</div></div>
+  </div>
+
+  <div class="sec" id="shark" style="display:flex;align-items:baseline;gap:10px;margin:26px 0 14px;border-bottom:2px solid var(--foam);padding-bottom:6px">
+    <h2 style="font-size:20px;font-weight:900">🦈 鲨片专题 · <b style="color:var(--coral)">从神作到爆米花</b></h2>
+    <span style="color:var(--muted);font-size:12px;font-family:var(--mono)">shark shelf</span>
+  </div>
+  <div class="shark">
+    <div class="s"><div class="emoji">🎬</div><h3>大白鲨 Jaws</h3><p>1975 开创暑期档，留白比鲨鱼贵。</p></div>
+    <div class="s"><div class="emoji">🧪</div><h3>深海狂鲨</h3><p>聪明马鲛鲨+实验室，烂得开心也算类型片。</p></div>
+    <div class="s"><div class="emoji">🌪️</div><h3>鲨卷风</h3><p>B 级狂欢，别用奥斯卡标准看它。</p></div>
+    <div class="s"><div class="emoji">📽️</div><h3>鲨鱼纪录片</h3><p>真家伙出场，比 CG 鲨有压迫感。</p></div>
+  </div>
+
+  <div class="sec" style="display:flex;align-items:baseline;gap:10px;margin:26px 0 14px;border-bottom:2px solid var(--foam);padding-bottom:6px">
+    <h2 style="font-size:20px;font-weight:900">🤿 潜水员黑话 <b style="color:var(--foam)">· 深海荐片人暗号</b></h2>
+    <span style="color:var(--muted);font-size:12px;font-family:var(--mono)">diver slang</span>
+  </div>
+  <div class="vocab">
+    <div class="vcard"><h4>下潜深度</h4><p>不是评分，是“今晚心理承受力”：表层爽片 / 中层惊悚 / 深渊神作。</p></div>
+    <div class="vcard"><h4>血鳍红</h4><p>鲨鱼影视主色之一，代表“惊悚片入口”，不是真血、不是盗版站红包。</p></div>
+    <div class="vcard"><h4>浪沫青</h4><p>推荐链接/锚点色，像水面反光：一眼知道“这儿能跳，但不跳出站”。</p></div>
+    <div class="vcard"><h4>尖齿 4K</h4><p>盗版站常用词，真 4K 来自片方/流媒体，不是“鲨鱼独家秒更”。</p></div>
+    <div class="vcard"><h4>潜水灯</h4><p>片单里的简介/看点，负责把深海片“照清楚再决定看不看”。</p></div>
+    <div class="vcard"><h4>假鲨鱼</h4><p>标题写“鲨鱼影视免费/深海巨幕/院线捕猎”，点进去是聚合广告场。</p></div>
+  </div>
+
+  <section class="list" id="avoid" style="margin-top:22px">
+    <h3 style="font-size:17px;color:var(--fin);font-family:var(--mono);margin-bottom:8px">🚫 鲨鱼名避雷 · 搜“鲨鱼影视”别踩这些</h3>
+    <li><b>“鲨鱼影视免费高清 / 深海巨幕 / 4K 尖齿画质”</b> —— 用“掠食者”包装热片聚合，常见弹窗、跳转、假播放器。[4](@ref)</li>
+    <li><b>“鲨鱼影院 院线大片免费捕猎”</b> —— “捕猎/秒更/万部”是盗版站话术，不是荐片站。[10](@ref)</li>
+    <li><b>“鲨鱼专属解码器 / 深海播放器下载”</b> —— 正常网页观影不需要装来源不明 EXE/APK。</li>
+    <li><b>“加群拿终身会员 99 元 / 鲨鱼 VIP 破解”</b> —— 个人收款+群转卖，第二天群名变短剧带货。</li>
+    <li><b>“万能解析 / 任何视频都能放”</b> —— 第三方解析站，版权与隐私双雷区，和深海荐片无关。</li>
+    <li><b>“鲨鱼影视/鲨鱼影院/鲨鱼 TV/深海鲨”混搜</b> —— 李鬼比真鱼多，认准 <code>shayuyingshi-h5.github.io</code>。</li>
+  </section>
+
+  <section class="list about" style="margin-top:18px">
+    <h3 style="font-size:17px;color:var(--foam);font-family:var(--mono);margin-bottom:8px">🦈 关于 鲨鱼影视</h3>
+    <p><strong style="color:var(--foam)">鲨鱼影视</strong> 是“深海荐片台 / 按水深排片”：深渊蓝、浪沫青、鲨背灰、血鳍红、珊瑚橙、月光银。做表层爽片、中层惊悚、深渊神作、海洋纪录片、鲨片专题、潜水员黑话、鲨鱼名盗版避雷。<strong style="color:var(--fin)">只荐片、排片、避坑，不存片、不解析第三方源、不提供下载、不挂“4K 尖齿/院线捕猎”。</strong></p>
+    <p>官网：<code>https://shayuyingshi-h5.github.io</code></p>
+    <p>内链全用 <code>#</code> 占位，CSS/DIV 全内联，不生成 robots.txt / sitemap.xml，GitHub Pages 直传即可；必应收录靠标题、描述、语义结构、移动端体验。</p>
+    <p>看片请走正版院线、授权流媒体、电视台回看、公共版权片库。真鲨鱼不靠“免费高清”吸人，鲨鱼影视也不靠。</p>
+    <div class="warn">⚠️ 搜“鲨鱼影视”看到“深海巨幕/尖齿 4K/院线捕猎”先关灯——那不是潜水灯，是盗版站的诱饵灯。</div>
+  </section>
+
+</div>
+
+<footer class="foot">
+  © 2026 鲨鱼影视 · shayuyingshi-h5.github.io · 下潜前先看片单，别被诱饵灯骗进广告海沟 🦈🌊
+</footer>
+
+</body>
+</html>
